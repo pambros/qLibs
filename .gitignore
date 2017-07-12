@@ -1,0 +1,5 @@
+generated
+userSpecific/*
+!userSpecific/globalVariables.default.bat
+/thirdParties/itk/g
+/internal
