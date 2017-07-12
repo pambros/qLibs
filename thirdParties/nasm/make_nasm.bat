@@ -12,9 +12,9 @@
 
 @set PATH= 
 @set PATH=%PATH%;C:\Windows\system32
-@set PATH=%PATH%;%_MINGW_BIN%
-@set PATH=%PATH%;%_MSYS_BIN%
-"%_MSYS_BIN%/bash.exe" ../../make_nasm.sh
+@set PATH=%PATH%;%_MINGW_BIN_DIR%
+@set PATH=%PATH%;%_MSYS_BIN_DIR%
+"%_MSYS_BIN_DIR%/bash.exe" ../../make_nasm.sh
 
 @if "%1" neq "-nopause" (
 	@pause
