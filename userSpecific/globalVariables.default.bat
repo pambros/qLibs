@@ -7,6 +7,7 @@
 @set _MSVC_DIR=%_UTIL_DIR%/Microsoft Visual Studio 14.0
 @set _MSVC_BIN_DIR=%_MSVC_DIR%/VC/bin
 @set _MSVC_BIN_X64_DIR=%_MSVC_BIN_DIR%/amd64
+@set _MSVC_BIN_X86_AMD64_DIR=%_MSVC_BIN_DIR%/x86_amd64
 @set _WINDOWS_KITS_SHARED_INCLUDE_DIR=C:/Program Files (x86)/Windows Kits/10/Include/10.0.14393.0/shared
 @set _WINDOWS_KITS_UCRT_INCLUDE_DIR=C:/Program Files (x86)/Windows Kits/10/Include/10.0.14393.0/ucrt
 
@@ -28,17 +29,18 @@
 @set _CPU=x64
 
 @set PATH= 
-@set PATH=%PATH%;C:\Windows\system32
+@set PATH=%PATH%;C:/Windows/system32
 @rem for boost library
-@set PATH=%PATH%;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\
+@set PATH=%PATH%;%SYSTEMROOT%/System32/WindowsPowerShell/v1.0/
 @rem @set PATH=%PATH%;%_MINGW_BIN_DIR%
 @rem @set PATH=%PATH%;%_MSYS_BIN_DIR%
 @set PATH=%PATH%;%_MSVC_BIN_X64_DIR%
+@set PATH=%PATH%;%_MSVC_BIN_X86_AMD64_DIR%
 @set PATH=%PATH%;%_MSVC_BIN_DIR%
 @set PATH=%PATH%;%_PYTHON_DIR%
 @rem @set PATH=%PATH%;%_GIT_BIN_DIR%
 @set VS150COMNTOOLS= 
-@set VS140COMNTOOLS=%_MSVC_DIR%\Common7\Tools\
+@set VS140COMNTOOLS=%_MSVC_DIR%/Common7/Tools/
 @set VS120COMNTOOLS= 
 @set VS110COMNTOOLS= 
 @set VS100COMNTOOLS= 
@@ -61,6 +63,8 @@
 @rem repository
 	@rem mingw https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/7.1.0/threads-posix/seh/
 		@rem https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/7.1.0/threads-posix/dwarf/
+		@rem https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/6.3.0/threads-posix/seh/
+		@rem https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/5.4.0/threads-posix/seh/
 		@if "%_CPU%" == "x64" @(
 			@set _MINGW_PRECOMPILED=%_REPOSITORY_DIR%/mingw-w64/x86_64-7.1.0-release-posix-seh-rt_v5-rev0.7z
 		) else @(
