@@ -1,5 +1,5 @@
 # qLibs
-Batch and shell to compile libraries:
+Batches and shells to compile libraries:
 - nasm
 - zlib
 - boost

@@ -3,3 +3,5 @@ userSpecific/*
 !userSpecific/globalVariables.default.bat
 /thirdParties/itk/g
 /internal
+qLibs.7z
+backupInternal.bat
