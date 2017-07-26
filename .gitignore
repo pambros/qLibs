@@ -1,6 +1,7 @@
 generated
 userSpecific/*
 !userSpecific/globalVariables.default.bat
+!userSpecific/globalVariables.common.bat
 /thirdParties/itk/g
 /internal
 qLibs.7z

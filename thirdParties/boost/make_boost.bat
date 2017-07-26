@@ -11,7 +11,8 @@
 
 @if %_COMPILER_NAME% == "MinGW Makefiles" @(
 	@set _TOOLSET=toolset=gcc
-	@set _COMPILER=mingw
+	@rem @set _COMPILER=mingw @rem DEPRECATED OR NOT MAINTAINED?
+	@set _COMPILER=gcc
 ) else (
 	@if %_COMPILER_NAME% == "Visual Studio 12 2013 Win64" @(
 		@set _TOOLSET=toolset=msvc-12.0

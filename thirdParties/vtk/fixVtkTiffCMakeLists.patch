@@ -1,0 +1,11 @@
+--- ThirdParty/tiff/vtktiff/CMakeLists.orig.txt	2017-07-23 09:25:44.599724700 +0200
++++ ThirdParty/tiff/vtktiff/CMakeLists.txt	2017-07-23 09:32:00.965802600 +0200
+@@ -490,7 +490,7 @@
+               HOST_BIG_ENDIAN HAVE_IEEEFP)
+ 
+ # Large file support
+-if (UNIX)
++if (UNIX OR MINGW)
+   # This might not catch every possibility catered for by
+   # AC_SYS_LARGEFILE.
+   add_definitions(-D_FILE_OFFSET_BITS=64)
