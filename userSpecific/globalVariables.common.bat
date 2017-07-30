@@ -53,8 +53,8 @@
 		@set _BOOST_SOURCE=%_REPOSITORY_DIR%/boost/%_BOOST_SOURCE_FILENAME%.7z
 		
 	@rem gdcm https://sourceforge.net/projects/gdcm/
-		@rem @set _GDCM_SOURCE_FILENAME=gdcm-2.8.0
-		@set _GDCM_SOURCE_FILENAME=gdcm-2.8.2
+		@rem @set _GDCM_SOURCE_FILENAME=gdcm-2.8.2
+		@set _GDCM_SOURCE_FILENAME=gdcm-2.8.0
 		@set _GDCM_SOURCE=%_REPOSITORY_DIR%/gdcm/%_GDCM_SOURCE_FILENAME%.tar.bz2
 		@set _GDCM_DIR=%_PROJECT_PATH%/thirdParties/gdcm/generated/%_USER_SPECIFIC%/gdcm
 		@set _GDCM_SRC_DIR=%_PROJECT_PATH%/thirdParties/gdcm/generated/%_USER_SPECIFIC%
