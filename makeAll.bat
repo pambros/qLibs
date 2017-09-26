@@ -8,6 +8,7 @@
 @call %_PROJECT_PATH%/common/makeSpecific.bat thirdParties gdcm
 @call %_PROJECT_PATH%/common/makeSpecific.bat thirdParties itk
 @call %_PROJECT_PATH%/common/makeSpecific.bat thirdParties vtk
+@call %_PROJECT_PATH%/common/makeSpecific.bat thirdParties python
 
 @if "%1" neq "-nopause" (
 	@pause

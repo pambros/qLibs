@@ -38,7 +38,7 @@
 @set PATH=%PATH%;%_MSVC_BIN_X86_AMD64_DIR%
 @set PATH=%PATH%;%_MSVC_BIN_DIR%
 @set PATH=%PATH%;%_PYTHON_DIR%
-@rem @set PATH=%PATH%;%_GIT_BIN_DIR%
+@set PATH=%PATH%;%_GIT_BIN_DIR%
 @set VS150COMNTOOLS= 
 @set VS140COMNTOOLS=%_MSVC_DIR%/Common7/Tools/
 @set VS120COMNTOOLS= 
@@ -52,7 +52,7 @@
 @set PYTHONPATH= 
 
 @set _DOWNLOAD_DIR=C:/Download
-@set _REPOSITORY_DIR=%_DOWNLOAD_DIR%/Repository
+@set _REPOSITORY_DIR=%_DOWNLOAD_DIR%/repository
 
 @rem doesn't work when you work with machine with different languages (english and french for example)
 @rem for english

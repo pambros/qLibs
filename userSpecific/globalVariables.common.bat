@@ -61,12 +61,14 @@
 		@set _GDCM_SRC_DEBUG_DIR=%_PROJECT_PATH%/thirdParties/gdcm/generated/%_USER_SPECIFIC%
 		
 	@rem itk https://itk.org/
-		@set _ITK_SOURCE_FILENAME=InsightToolkit-4.12.0
+		@set _ITK_SOURCE_FILENAME=InsightToolkit-4.12.2
+		@rem @set _ITK_SOURCE_FILENAME=InsightToolkit-4.12.0
 		@set _ITK_SOURCE=%_REPOSITORY_DIR%/itk/%_ITK_SOURCE_FILENAME%.tar.gz
 		@set _ITK_DIR=%_PROJECT_PATH%/thirdParties/itk/generated/%_USER_SPECIFIC%/itk
 		
 	@rem vtk http://www.vtk.org/
-		@set _VTK_SOURCE_FILENAME=VTK-8.0.0
+		@set _VTK_SOURCE_FILENAME=VTK-8.0.1
+		@rem @set _VTK_SOURCE_FILENAME=VTK-8.0.0
 		@set _VTK_SOURCE=%_REPOSITORY_DIR%/vtk/%_VTK_SOURCE_FILENAME%.tar.gz
 		@set _VTK_DIR=%_PROJECT_PATH%/thirdParties/vtk/generated/%_USER_SPECIFIC%/vtk
 		
