@@ -4,7 +4,7 @@
 @set _CD=%cd%
 @set PATH= 
 @set PATH=%PATH%;%CD%/generated/install/bin
-@set PATH=%PATH%;C:/Util/Cuda9/bin
+@set PATH=%PATH%;%_CUDA_BIN_DIR%
 
 @set DEVICE=cuda0
 @set GPUARRAY_TEST_DEVICE=cuda0

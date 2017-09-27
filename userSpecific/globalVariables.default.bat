@@ -23,6 +23,8 @@
 
 @set _7_ZIP="%_UTIL_DIR%/7-Zip/7z.exe"
 
+@set _CUDA_BIN_DIR=%_UTIL_DIR%/Cuda/bin
+
 @rem name of the compiler using cmake syntax
 @set _COMPILER_NAME="Visual Studio 14 2015 Win64"
 
