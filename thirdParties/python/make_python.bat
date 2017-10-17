@@ -36,6 +36,12 @@
 %_PYTHON% -m pip install XlsxWriter
 %_PYTHON% -m pip install PyYAML
 
+@rem %_PYTHON% -m pip install tensorflow
+@rem %_PYTHON% -m pip uninstall -y tensorflow-gpu
+@rem %_PYTHON% -m pip uninstall -y tf-nightly-gpu
+@rem %_PYTHON% -m pip install tf-nightly-gpu
+@rem %_PYTHON% -m pip install tensorflow-gpu
+
 %_PYTHON% -m pip install git+git://github.com/Theano/Theano.git --upgrade --no-deps
 %_PYTHON% -m pip install git+git://github.com/fchollet/keras.git --upgrade --no-deps
 
