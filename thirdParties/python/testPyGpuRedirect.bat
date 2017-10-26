@@ -1,0 +1,1 @@
+testPyGpu.bat > stdout.txt 2> stderr.txt
