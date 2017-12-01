@@ -1,4 +1,5 @@
-@set _OLD_PATH=%PATH%
+@setlocal
+@rem @set _OLD_PATH=%PATH%
 
 @set _LIB_PATH=%1
 @set _LIB_NAME=%2
@@ -12,4 +13,5 @@
 
 @call make_%_LIB_NAME%.bat -nopause > %_GENERATED_PATH%/stdoutmake_%_LIB_NAME%.%_USER_SPECIFIC%.txt 2> %_GENERATED_PATH%/stderrmake_%_LIB_NAME%.%_USER_SPECIFIC%.txt
 
-@set PATH=%_OLD_PATH%
+@rem @set PATH=%_OLD_PATH%
+@endlocal

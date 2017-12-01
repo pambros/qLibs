@@ -1,7 +1,7 @@
 #!/bin/sh
 source localProjectPath.sh
 source $_PROJECT_PATH/globalVariables.sh
-_CURRENT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" # TODO check if we still use this variable
+_CURRENT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 source $_PROJECT_PATH/common/makeSpecific.sh thirdParties nasm
 # source $_PROJECT_PATH/common/makeSpecific.sh thirdParties zlib
