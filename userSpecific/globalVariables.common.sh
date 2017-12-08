@@ -42,8 +42,8 @@
 		_BOOST_SOURCE=$_REPOSITORY_DIR/boost/$_BOOST_SOURCE_FILENAME.tar.gz
 
 	# cmake https://cmake.org/
-		# _CMAKE_SOURCE_FILENAME=cmake-3.9.0-rc5
-		# _CMAKE_SOURCE_DIR=$_REPOSITORY_DIR/cmake/$_CMAKE_SOURCE_FILENAME.zip
+		_CMAKE_SOURCE_FILENAME=cmake-3.10.0
+		_CMAKE_SOURCE=$_REPOSITORY_DIR/cmake/$_CMAKE_SOURCE_FILENAME.tar.gz
 		
 	# gdcm https://sourceforge.net/projects/gdcm/
 		_GDCM_SOURCE_FILENAME=gdcm-2.8.4

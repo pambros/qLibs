@@ -5,8 +5,9 @@ _CURRENT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 source $_PROJECT_PATH/common/makeSpecific.sh thirdParties nasm
 source $_PROJECT_PATH/common/makeSpecific.sh thirdParties zlib
-# source $_PROJECT_PATH/common/makeSpecific.sh thirdParties python
+source $_PROJECT_PATH/common/makeSpecific.sh thirdParties python
 source $_PROJECT_PATH/common/makeSpecific.sh thirdParties boost
+source $_PROJECT_PATH/common/makeSpecific.sh thirdParties cmake
 source $_PROJECT_PATH/common/makeSpecific.sh thirdParties gdcm
 source $_PROJECT_PATH/common/makeSpecific.sh thirdParties itk
 source $_PROJECT_PATH/common/makeSpecific.sh thirdParties vtk
