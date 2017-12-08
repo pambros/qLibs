@@ -1,11 +1,13 @@
 generated
+*.pyc
+__pycache__
 userSpecific/*
 !userSpecific/globalVariables.default.bat
 !userSpecific/globalVariables.common.bat
 !userSpecific/globalVariables.default.sh
 !userSpecific/globalVariables.common.sh
-/thirdParties/itk/g
+sync.ffs_db
 /internal
+/thirdParties/itk/g
 qLibs.7z
 backupInternal.bat
-sync.ffs_db

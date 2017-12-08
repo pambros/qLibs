@@ -31,7 +31,7 @@ cd ..
 
 cd ..
 
-# source $_PROJECT_PATH/common/deleteFolder.sh ${_VTK_SOURCE_FILENAME}
+source $_PROJECT_PATH/common/deleteFolder.sh ${_VTK_SOURCE_FILENAME}
 
 if [ "$1" != "-nopause" ]; then
 	read -n1 -r -p "Press any key to continue..."
