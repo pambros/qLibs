@@ -14,7 +14,7 @@
 @set PATH=%PATH%;C:\Windows\system32
 @set PATH=%PATH%;%_MINGW_BIN_DIR%
 @set PATH=%PATH%;%_MSYS_BIN_DIR%
-"%_MSYS_BIN_DIR%/bash.exe" ../../make_nasm.sh
+"%_MSYS_BIN_DIR%/bash.exe" ../../make_msys_nasm.sh
 
 @if "%1" neq "-nopause" (
 	@pause

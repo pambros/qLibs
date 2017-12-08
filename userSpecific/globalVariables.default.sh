@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # _UTIL_DIR=$HOME/myenv
 
 # _PYTHON_DIR=$_UTIL_DIR/bin
@@ -6,7 +6,7 @@
 # _PYTHON_LIB=$_UTIL_DIR/lib/libpython3.6m.so
 # _PYTHON_LIB=$_UTIL_DIR/lib/libpython3.so
 # $_UTIL_DIR/lib/python3.6/site_packages
-_PYTHON=python
+_PYTHON=python3
 
 # _CMAKE=$_UTIL_DIR/bin/cmake
 _CMAKE=cmake
@@ -23,18 +23,24 @@ _COMPILER_NAME="Unix Makefiles"
 
 _CPU=x64
 
-# PATH= 
+export _MYENV=$HOME/myenv
+
+export PATH=$_MYENV/bin:$PATH
+# PATH=
 # PATH=$PATH:$_PYTHON_DIR
 # PATH=$PATH:$_GIT_BIN_DIR
 
-# LIBRARY_PATH= 
+#export CPATH=
+#export LIBRARY_PATH=
+#export LD_LIBRARY_PATH=
 
-# CPLUS_INCLUDE_PATH= 
+export CPLUS_INCLUDE_PATH=$_MYENV/include/python3.6m
 
-# PYTHONPATH= 
+export PYTHONPATH=$_MYENV
 
-_DOWNLOAD_DIR=/tudelft/pambrosini/staff-homes/a/pambrosini/Download
-_REPOSITORY_DIR=${_DOWNLOAD}/open/portable/repository
+export _DOWNLOAD_DIR=$HOME/Download
+export _REPOSITORY_DIR=${_DOWNLOAD_DIR}/repository
+export _MYENV_INSTALL=$HOME/myenv
 
 _DATE=`date +%Y_%m_%d_%H_%M_%S`
 
