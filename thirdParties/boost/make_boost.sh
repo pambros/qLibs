@@ -13,7 +13,7 @@ cd ${_BOOST_SOURCE_FILENAME}
 
 ./bootstrap.sh  --prefix=${_MYENV_INSTALL} --with-python=${_MYENV}/bin/python3 --with-python-root=${_MYENV}
 
-_BOOST_OPTIONS="--prefix=${_MYENV_INSTALL} --with-python"
+_BOOST_OPTIONS="--prefix=${_MYENV_INSTALL}  cxxflags=-fPIC --with-python"
 echo $_BOOST_OPTIONS
 ./b2 install $_BOOST_OPTIONS
 
