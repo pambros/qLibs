@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 source ../../localProjectPath.sh
 
 mkdir -p generated
