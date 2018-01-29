@@ -65,4 +65,8 @@
 		_VTK_SOURCE=$_REPOSITORY_DIR/vtk/$_VTK_SOURCE_FILENAME.tar.gz
 		# _VTK_DIR=$_PROJECT_PATH/thirdParties/vtk/generated/$_USER_SPECIFIC/vtk
 		
+	# libjpeg-turbo https://github.com/libjpeg-turbo/libjpeg-turbo
+		_LIB_JPEG_TURBO_SOURCE_FILENAME=libjpeg-turbo-1.5.3
+		_LIB_JPEG_TURBO_SOURCE=$_REPOSITORY_DIR/libjpeg-turbo/$_LIB_JPEG_TURBO_SOURCE_FILENAME.tar.gz
+		
 	# opencv http://opencv.org/
