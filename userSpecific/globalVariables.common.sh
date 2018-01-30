@@ -23,6 +23,18 @@
 		# _ZLIB_LIB_DIR=$_ZLIB_DIR/lib
 		# _ZLIB_LIB=$_ZLIB_LIB_DIR/libzlibstatic.a
 		# _ZLIB_DLL_LIB=$_ZLIB_LIB_DIR/libzlib.dll.a
+		
+	# libpng http://www.libpng.org/pub/png/
+		_LIB_PNG_SOURCE_FILENAME=libpng-1.6.34
+		_LIB_PNG_SOURCE=$_REPOSITORY_DIR/libpng/$_LIB_PNG_SOURCE_FILENAME.tar.gz
+		
+	# libjpeg-turbo https://github.com/libjpeg-turbo/libjpeg-turbo
+		_LIB_JPEG_TURBO_SOURCE_FILENAME=libjpeg-turbo-1.5.3
+		_LIB_JPEG_TURBO_SOURCE=$_REPOSITORY_DIR/libjpeg-turbo/$_LIB_JPEG_TURBO_SOURCE_FILENAME.tar.gz
+		
+	# libtiff http://www.libtiff.org/
+		_LIB_TIFF_SOURCE_FILENAME=tiff-4.0.9
+		_LIB_TIFF_SOURCE=$_REPOSITORY_DIR/libtiff/$_LIB_TIFF_SOURCE_FILENAME.tar.gz
 	
 	# python https://www.python.org/
 		# http://www.lfd.uci.edu/~gohlke/pythonlibs/
@@ -64,9 +76,5 @@
 		# _VTK_SOURCE_FILENAME=VTK-8.0.1
 		_VTK_SOURCE=$_REPOSITORY_DIR/vtk/$_VTK_SOURCE_FILENAME.tar.gz
 		# _VTK_DIR=$_PROJECT_PATH/thirdParties/vtk/generated/$_USER_SPECIFIC/vtk
-		
-	# libjpeg-turbo https://github.com/libjpeg-turbo/libjpeg-turbo
-		_LIB_JPEG_TURBO_SOURCE_FILENAME=libjpeg-turbo-1.5.3
-		_LIB_JPEG_TURBO_SOURCE=$_REPOSITORY_DIR/libjpeg-turbo/$_LIB_JPEG_TURBO_SOURCE_FILENAME.tar.gz
 		
 	# opencv http://opencv.org/
