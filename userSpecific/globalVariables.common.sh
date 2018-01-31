@@ -15,6 +15,8 @@
 		_NASM_SOURCE=$_REPOSITORY_DIR/nasm/$_NASM_SOURCE_FILENAME.tar.xz
 		# _NASM_BIN_DIR=$_PROJECT_PATH/thirdParties/nasm/generated/$_USER_SPECIFIC/nasm/bin
 		
+	# libz
+		
 	# zlib http://zlib.net/
 		_ZLIB_SOURCE_FILENAME=zlib-1.2.11
 		_ZLIB_SOURCE=$_REPOSITORY_DIR/zlib/$_ZLIB_SOURCE_FILENAME.tar.gz
@@ -32,9 +34,36 @@
 		_LIB_JPEG_TURBO_SOURCE_FILENAME=libjpeg-turbo-1.5.3
 		_LIB_JPEG_TURBO_SOURCE=$_REPOSITORY_DIR/libjpeg-turbo/$_LIB_JPEG_TURBO_SOURCE_FILENAME.tar.gz
 		
+	# liblcms2 http://www.littlecms.com/
+		
+	# openjpeg http://www.openjpeg.org/
+		# dependency liblcms2 libtiff libpng libz
+		_OPEN_JPEG_SOURCE_FILENAME=openjpeg-2.3.0
+		_OPEN_JPEG_SOURCE=$_REPOSITORY_DIR/openjpeg/$_OPEN_JPEG_SOURCE_FILENAME.tar.gz
+		
+	# jasper https://www.ece.uvic.ca/~frodo/jasper/
+		_JASPER_SOURCE_FILENAME=jasper-2.0.14
+		_JASPER_SOURCE=$_REPOSITORY_DIR/jasper/$_JASPER_SOURCE_FILENAME.tar.gz
+		
 	# libtiff http://www.libtiff.org/
 		_LIB_TIFF_SOURCE_FILENAME=tiff-4.0.9
 		_LIB_TIFF_SOURCE=$_REPOSITORY_DIR/libtiff/$_LIB_TIFF_SOURCE_FILENAME.tar.gz
+		
+	# dcmtk http://dicom.offis.de/dcmtk.php.en
+		_DCMTK_SOURCE_FILENAME=dcmtk-DCMTK-3.6.2
+		_DCMTK_SOURCE=$_REPOSITORY_DIR/dcmtk/$_DCMTK_SOURCE_FILENAME.tar.gz
+		
+	# sqlite https://www.sqlite.org/
+		_SQLITE_SOURCE_FILENAME=sqlite-autoconf-3200100
+		_SQLITE_SOURCE=$_REPOSITORY_DIR/sqlite/$_SQLITE_SOURCE_FILENAME.tar.gz
+		
+	# pugixml https://pugixml.org/
+		_PUGIXML_SOURCE_FILENAME=pugixml-1.8
+		_PUGIXML_SOURCE=$_REPOSITORY_DIR/pugixml/$_PUGIXML_SOURCE_FILENAME.tar.gz
+		
+	# libxml2 http://xmlsoft.org/
+		_LIB_XML2_SOURCE_FILENAME=libxml2-2.9.7
+		_LIB_XML2_SOURCE=$_REPOSITORY_DIR/libxml2/$_LIB_XML2_SOURCE_FILENAME.tar.gz
 	
 	# python https://www.python.org/
 		# http://www.lfd.uci.edu/~gohlke/pythonlibs/
