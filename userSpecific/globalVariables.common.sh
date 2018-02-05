@@ -15,8 +15,6 @@
 		_NASM_SOURCE=$_REPOSITORY_DIR/nasm/$_NASM_SOURCE_FILENAME.tar.xz
 		# _NASM_BIN_DIR=$_PROJECT_PATH/thirdParties/nasm/generated/$_USER_SPECIFIC/nasm/bin
 		
-	# libz
-		
 	# zlib http://zlib.net/
 		_ZLIB_SOURCE_FILENAME=zlib-1.2.11
 		_ZLIB_SOURCE=$_REPOSITORY_DIR/zlib/$_ZLIB_SOURCE_FILENAME.tar.gz
@@ -26,6 +24,65 @@
 		# _ZLIB_LIB=$_ZLIB_LIB_DIR/libzlibstatic.a
 		# _ZLIB_DLL_LIB=$_ZLIB_LIB_DIR/libzlib.dll.a
 		
+	# boost http://www.boost.org/
+		_BOOST_SOURCE_FILENAME=boost_1_65_1
+		# _BOOST_SOURCE_FILENAME=boost_1_63_0
+		_BOOST_SOURCE=$_REPOSITORY_DIR/boost/$_BOOST_SOURCE_FILENAME.tar.gz
+
+	# cmake https://cmake.org/
+		_CMAKE_SOURCE_FILENAME=cmake-3.10.0
+		_CMAKE_SOURCE=$_REPOSITORY_DIR/cmake/$_CMAKE_SOURCE_FILENAME.tar.gz
+		
+	# sqlite https://www.sqlite.org/
+		_SQLITE_SOURCE_FILENAME=sqlite-autoconf-3200100
+		_SQLITE_SOURCE=$_REPOSITORY_DIR/sqlite/$_SQLITE_SOURCE_FILENAME.tar.gz
+		
+	# pugixml https://pugixml.org/
+		_PUGIXML_SOURCE_FILENAME=pugixml-1.8
+		_PUGIXML_SOURCE=$_REPOSITORY_DIR/pugixml/$_PUGIXML_SOURCE_FILENAME.tar.gz
+		
+	# libxml2 http://xmlsoft.org/
+		_LIB_XML2_SOURCE_FILENAME=libxml2-2.9.7
+		_LIB_XML2_SOURCE=$_REPOSITORY_DIR/libxml2/$_LIB_XML2_SOURCE_FILENAME.tar.gz
+		
+	# unittestpp https://github.com/unittest-cpp/unittest-cpp
+		_UNITTESTPP_SOURCE_FILENAME=unittest-cpp-2.0.0
+		_UNITTESTPP_SOURCE=$_REPOSITORY_DIR/unittestpp/$_UNITTESTPP_SOURCE_FILENAME.tar.gz
+		
+	# libgpuarray https://github.com/Theano/libgpuarray
+		_LIBGPUARRAY_SOURCE_FILENAME=libgpuarray-0.7.5
+		_LIBGPUARRAY_SOURCE=$_REPOSITORY_DIR/libgpuarray/$_LIBGPUARRAY_SOURCE_FILENAME.tar.gz
+	
+	# python https://www.python.org/
+		# http://www.lfd.uci.edu/~gohlke/pythonlibs/
+		_WHEEL_DIR=$_REPOSITORY_DIR/python
+		_PYDICOM_SOURCE=$_WHEEL_DIR/2017_09_26_pydicom-master.zip
+		_NUMPY_WHEEL=$_WHEEL_DIR/numpy-1.13.1+mkl-cp36-cp36m-win_amd64.whl
+		_SCIPY_WHEEL=$_WHEEL_DIR/scipy-1.0.0b1-cp36-cp36m-win_amd64.whl
+		_SCIKIT_LEARN_WHEEL=$_WHEEL_DIR/scikit_learn-0.19.0-cp36-cp36m-win_amd64.whl
+		_SCIKIT_IMAGE_WHEEL=$_WHEEL_DIR/scikit_image-0.13.0-cp36-cp36m-win_amd64.whl
+		_RPY2_WHEEL=$_WHEEL_DIR/rpy2-2.8.6-cp36-cp36m-win_amd64.whl
+		_MAHOTAS_WHEEL=$_WHEEL_DIR/mahotas-1.4.3-cp36-cp36m-win_amd64.whl
+		_MYSQL_CLIENT_WHEEL=$_WHEEL_DIR/mysqlclient-1.3.12-cp36-cp36m-win_amd64.whl
+		
+	# swig http://www.swig.org/
+		_SWIG_SOURCE_FILENAME=swig-3.0.12
+		_SWIG_SOURCE=$_REPOSITORY_DIR/swig/$_SWIG_SOURCE_FILENAME.tar.gz
+		
+	# gdkpixbuf https://pugixml.org/
+		_GDKPIXBUF_SOURCE_FILENAME=pugixml-1.8
+		_GDKPIXBUF_SOURCE=$_REPOSITORY_DIR/gdkpixbuf/$_GDKPIXBUF_SOURCE_FILENAME.tar.gz
+		
+	# cairo https://pugixml.org/
+		_CAIRO_SOURCE_FILENAME=pugixml-1.8
+		_CAIRO_SOURCE=$_REPOSITORY_DIR/cairo/$_CAIRO_SOURCE_FILENAME.tar.gz
+		
+	# glib https://pugixml.org/
+		_GLIB_SOURCE_FILENAME=pugixml-1.8
+		_GLIB_SOURCE=$_REPOSITORY_DIR/glib/$_GLIB_SOURCE_FILENAME.tar.gz
+		
+	# liblcms2 http://www.littlecms.com/
+		
 	# libpng http://www.libpng.org/pub/png/
 		_LIB_PNG_SOURCE_FILENAME=libpng-1.6.34
 		_LIB_PNG_SOURCE=$_REPOSITORY_DIR/libpng/$_LIB_PNG_SOURCE_FILENAME.tar.gz
@@ -33,8 +90,6 @@
 	# libjpeg-turbo https://github.com/libjpeg-turbo/libjpeg-turbo
 		_LIB_JPEG_TURBO_SOURCE_FILENAME=libjpeg-turbo-1.5.3
 		_LIB_JPEG_TURBO_SOURCE=$_REPOSITORY_DIR/libjpeg-turbo/$_LIB_JPEG_TURBO_SOURCE_FILENAME.tar.gz
-		
-	# liblcms2 http://www.littlecms.com/
 		
 	# openjpeg http://www.openjpeg.org/
 		# dependency liblcms2 libtiff libpng libz
@@ -53,39 +108,6 @@
 		_DCMTK_SOURCE_FILENAME=dcmtk-DCMTK-3.6.2
 		_DCMTK_SOURCE=$_REPOSITORY_DIR/dcmtk/$_DCMTK_SOURCE_FILENAME.tar.gz
 		
-	# sqlite https://www.sqlite.org/
-		_SQLITE_SOURCE_FILENAME=sqlite-autoconf-3200100
-		_SQLITE_SOURCE=$_REPOSITORY_DIR/sqlite/$_SQLITE_SOURCE_FILENAME.tar.gz
-		
-	# pugixml https://pugixml.org/
-		_PUGIXML_SOURCE_FILENAME=pugixml-1.8
-		_PUGIXML_SOURCE=$_REPOSITORY_DIR/pugixml/$_PUGIXML_SOURCE_FILENAME.tar.gz
-		
-	# libxml2 http://xmlsoft.org/
-		_LIB_XML2_SOURCE_FILENAME=libxml2-2.9.7
-		_LIB_XML2_SOURCE=$_REPOSITORY_DIR/libxml2/$_LIB_XML2_SOURCE_FILENAME.tar.gz
-	
-	# python https://www.python.org/
-		# http://www.lfd.uci.edu/~gohlke/pythonlibs/
-		_WHEEL_DIR=$_REPOSITORY_DIR/python
-		_PYDICOM_SOURCE=$_WHEEL_DIR/2017_09_26_pydicom-master.zip
-		_NUMPY_WHEEL=$_WHEEL_DIR/numpy-1.13.1+mkl-cp36-cp36m-win_amd64.whl
-		_SCIPY_WHEEL=$_WHEEL_DIR/scipy-1.0.0b1-cp36-cp36m-win_amd64.whl
-		_SCIKIT_LEARN_WHEEL=$_WHEEL_DIR/scikit_learn-0.19.0-cp36-cp36m-win_amd64.whl
-		_SCIKIT_IMAGE_WHEEL=$_WHEEL_DIR/scikit_image-0.13.0-cp36-cp36m-win_amd64.whl
-		_RPY2_WHEEL=$_WHEEL_DIR/rpy2-2.8.6-cp36-cp36m-win_amd64.whl
-		_MAHOTAS_WHEEL=$_WHEEL_DIR/mahotas-1.4.3-cp36-cp36m-win_amd64.whl
-		_MYSQL_CLIENT_WHEEL=$_WHEEL_DIR/mysqlclient-1.3.12-cp36-cp36m-win_amd64.whl
-		
-	# boost http://www.boost.org/
-		_BOOST_SOURCE_FILENAME=boost_1_65_1
-		# _BOOST_SOURCE_FILENAME=boost_1_63_0
-		_BOOST_SOURCE=$_REPOSITORY_DIR/boost/$_BOOST_SOURCE_FILENAME.tar.gz
-
-	# cmake https://cmake.org/
-		_CMAKE_SOURCE_FILENAME=cmake-3.10.0
-		_CMAKE_SOURCE=$_REPOSITORY_DIR/cmake/$_CMAKE_SOURCE_FILENAME.tar.gz
-		
 	# gdcm https://sourceforge.net/projects/gdcm/
 		_GDCM_SOURCE_FILENAME=gdcm-2.8.4
 		# _GDCM_SOURCE_FILENAME=gdcm-2.8.0
@@ -93,6 +115,20 @@
 		# _GDCM_DIR=$_PROJECT_PATH/thirdParties/gdcm/generated/$_USER_SPECIFIC/gdcm
 		# _GDCM_SRC_DEBUG_DIR=$_PROJECT_PATH/thirdParties/gdcm/generated/$_USER_SPECIFIC
 		_GDCM_SRC_DIR=$_MYENV_INSTALL/lib/gdcm-2.8
+		
+	# openslide http://openslide.org/
+		_OPENSLIDE_SOURCE_FILENAME=openslide-3.4.1
+		_OPENSLIDE_SOURCE=$_REPOSITORY_DIR/openslide/$_OPENSLIDE_SOURCE_FILENAME.tar.gz
+		_OPENSLIDE_PYTHON_SOURCE_FILENAME=openslide-python-1.1.1
+		_OPENSLIDE_PYTHON_SOURCE=$_REPOSITORY_DIR/openslide/$_OPENSLIDE_PYTHON_SOURCE_FILENAME.tar.gz
+		
+	# fltk http://www.fltk.org/index.php
+		_FLTK_SOURCE_FILENAME=fltk-1.4.x-r12643
+		_FLTK_SOURCE=$_REPOSITORY_DIR/fltk/$_FLTK_SOURCE_FILENAME.tar.gz
+	
+	# qt
+	
+	# opencv http://opencv.org/
 		
 	# itk https://itk.org/
 		_ITK_SOURCE_FILENAME=InsightToolkit-4.12.2
@@ -106,4 +142,4 @@
 		_VTK_SOURCE=$_REPOSITORY_DIR/vtk/$_VTK_SOURCE_FILENAME.tar.gz
 		# _VTK_DIR=$_PROJECT_PATH/thirdParties/vtk/generated/$_USER_SPECIFIC/vtk
 		
-	# opencv http://opencv.org/
+	# asap
