@@ -18,9 +18,9 @@ _CURRENT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # source $_PROJECT_PATH/common/makeSpecific.sh thirdParties python
 # source $_PROJECT_PATH/common/makeSpecific.sh thirdParties swig
 
+# source $_PROJECT_PATH/common/makeSpecific.sh thirdParties glib
 # source $_PROJECT_PATH/common/makeSpecific.sh thirdParties gdkpixbuf
 # source $_PROJECT_PATH/common/makeSpecific.sh thirdParties cairo
-# source $_PROJECT_PATH/common/makeSpecific.sh thirdParties glib
 
 # source $_PROJECT_PATH/common/makeSpecific.sh thirdParties liblcms2
 

@@ -69,17 +69,17 @@
 		_SWIG_SOURCE_FILENAME=swig-3.0.12
 		_SWIG_SOURCE=$_REPOSITORY_DIR/swig/$_SWIG_SOURCE_FILENAME.tar.gz
 		
-	# gdkpixbuf https://pugixml.org/
-		_GDKPIXBUF_SOURCE_FILENAME=pugixml-1.8
-		_GDKPIXBUF_SOURCE=$_REPOSITORY_DIR/gdkpixbuf/$_GDKPIXBUF_SOURCE_FILENAME.tar.gz
+	# glib https://github.com/GNOME/glib
+		_GLIB_SOURCE_FILENAME=glib-2.54.3
+		_GLIB_SOURCE=$_REPOSITORY_DIR/glib/$_GLIB_SOURCE_FILENAME.tar.xz
 		
-	# cairo https://pugixml.org/
-		_CAIRO_SOURCE_FILENAME=pugixml-1.8
-		_CAIRO_SOURCE=$_REPOSITORY_DIR/cairo/$_CAIRO_SOURCE_FILENAME.tar.gz
+	# gdkpixbuf https://github.com/GNOME/gdk-pixbuf
+		_GDKPIXBUF_SOURCE_FILENAME=gdk-pixbuf-2.36.11
+		_GDKPIXBUF_SOURCE=$_REPOSITORY_DIR/gdkpixbuf/$_GDKPIXBUF_SOURCE_FILENAME.tar.xz
 		
-	# glib https://pugixml.org/
-		_GLIB_SOURCE_FILENAME=pugixml-1.8
-		_GLIB_SOURCE=$_REPOSITORY_DIR/glib/$_GLIB_SOURCE_FILENAME.tar.gz
+	# cairo https://cairographics.org/
+		_CAIRO_SOURCE_FILENAME=cairo-1.14.12
+		_CAIRO_SOURCE=$_REPOSITORY_DIR/cairo/$_CAIRO_SOURCE_FILENAME.tar.xz
 		
 	# liblcms2 http://www.littlecms.com/
 		
