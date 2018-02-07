@@ -37,7 +37,7 @@ _CURRENT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # source $_PROJECT_PATH/common/makeSpecific.sh thirdParties itk
 # source $_PROJECT_PATH/common/makeSpecific.sh thirdParties vtk
 
-source $_PROJECT_PATH/common/makeSpecific.sh thirdParties asap
+# source $_PROJECT_PATH/common/makeSpecific.sh thirdParties asap
 
 if [ "$1" != "-nopause" ]; then
 	read -n1 -r -p "Press any key to continue..."

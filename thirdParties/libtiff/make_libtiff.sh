@@ -11,9 +11,17 @@ tar xf $_LIB_TIFF_SOURCE
 
 cd ${_LIB_TIFF_SOURCE_FILENAME}
 
-./configure --prefix=${_MYENV_INSTALL}
-make
-make install-strip
+# ./configure --prefix=${_MYENV_INSTALL}
+# make
+# make install-strip
+
+mkdir -p release
+cd release
+
+$_CMAKE -G "${_COMPILER_NAME}" -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=${_MYENV_INSTALL} $_GENERATED_PATH/$_LIB_TIFF_SOURCE_FILENAME
+$_CMAKE --build . --target install
+
+cd ..
 
 cd ..
 

@@ -18,8 +18,11 @@ export PATH=$_MYENV/bin:$PATH
 
 export CPLUS_INCLUDE_PATH=$_MYENV/include/python3.6m
 #export CPATH=
-#export LIBRARY_PATH=
-#export LD_LIBRARY_PATH=
+export LIBRARY_PATH=$_MYENV/lib
+export LD_LIBRARY_PATH=$_MYENV/lib
+
+export PKG_CONFIG_PATH=${_MYENV}/lib/pkgconfig
+export ACLOCAL_PATH=${_MYENV}/share/aclocal # https://www.gnu.org/software/automake/manual/html_node/Macro-Search-Path.html
 
 export PYTHONPATH=$_MYENV
 

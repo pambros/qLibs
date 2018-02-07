@@ -18,11 +18,6 @@
 	# zlib http://zlib.net/
 		_ZLIB_SOURCE_FILENAME=zlib-1.2.11
 		_ZLIB_SOURCE=$_REPOSITORY_DIR/zlib/$_ZLIB_SOURCE_FILENAME.tar.gz
-		# _ZLIB_DIR=$_PROJECT_PATH/thirdParties/zlib/generated/$_USER_SPECIFIC/zlib
-		# _ZLIB_INCLUDE_DIR=$_ZLIB_DIR/include
-		# _ZLIB_LIB_DIR=$_ZLIB_DIR/lib
-		# _ZLIB_LIB=$_ZLIB_LIB_DIR/libzlibstatic.a
-		# _ZLIB_DLL_LIB=$_ZLIB_LIB_DIR/libzlib.dll.a
 		
 	# boost http://www.boost.org/
 		_BOOST_SOURCE_FILENAME=boost_1_65_1
@@ -48,6 +43,9 @@
 	# unittestpp https://github.com/unittest-cpp/unittest-cpp
 		_UNITTESTPP_SOURCE_FILENAME=unittest-cpp-2.0.0
 		_UNITTESTPP_SOURCE=$_REPOSITORY_DIR/unittestpp/$_UNITTESTPP_SOURCE_FILENAME.tar.gz
+		_UNITTESTPP_INCLUDE_DIR=$_MYENV/include/UnitTest++
+		_UNITTESTPP_DLL_LIB=$_MYENV/lib/libUnitTest++.so
+		_UNITTESTPP_DLL_LIB_DEBUG=$_UNITTESTPP_DLL_LIB
 		
 	# libgpuarray https://github.com/Theano/libgpuarray
 		_LIBGPUARRAY_SOURCE_FILENAME=libgpuarray-0.7.5
@@ -103,10 +101,13 @@
 	# libtiff http://www.libtiff.org/
 		_LIB_TIFF_SOURCE_FILENAME=tiff-4.0.9
 		_LIB_TIFF_SOURCE=$_REPOSITORY_DIR/libtiff/$_LIB_TIFF_SOURCE_FILENAME.tar.gz
+		_LIB_TIFF_INCLUDE_DIR=$_MYENV/include
+		_LIB_TIFF_DLL_LIB=$_MYENV/lib/libtiff.so
 		
 	# dcmtk http://dicom.offis.de/dcmtk.php.en
 		_DCMTK_SOURCE_FILENAME=dcmtk-DCMTK-3.6.2
 		_DCMTK_SOURCE=$_REPOSITORY_DIR/dcmtk/$_DCMTK_SOURCE_FILENAME.tar.gz
+		_DCMTK_INCLUDE_DIR=$_MYENV/include
 		
 	# gdcm https://sourceforge.net/projects/gdcm/
 		_GDCM_SOURCE_FILENAME=gdcm-2.8.4
@@ -121,6 +122,8 @@
 		_OPENSLIDE_SOURCE=$_REPOSITORY_DIR/openslide/$_OPENSLIDE_SOURCE_FILENAME.tar.gz
 		_OPENSLIDE_PYTHON_SOURCE_FILENAME=openslide-python-1.1.1
 		_OPENSLIDE_PYTHON_SOURCE=$_REPOSITORY_DIR/openslide/$_OPENSLIDE_PYTHON_SOURCE_FILENAME.tar.gz
+		_OPENSLIDE_INCLUDE_DIR=$_MYENV/include/openslide
+		_OPENSLIDE_DLL_LIB=$_MYENV/lib/libopenslide.so
 		
 	# fltk http://www.fltk.org/index.php
 		_FLTK_SOURCE_FILENAME=fltk-1.4.x-r12643
@@ -145,5 +148,5 @@
 		# _VTK_DIR=$_PROJECT_PATH/thirdParties/vtk/generated/$_USER_SPECIFIC/vtk
 		
 	# asap https://github.com/GeertLitjens/ASAP
-		_ASAP_SOURCE_FILENAME=ASAP-1.7.3
+		_ASAP_SOURCE_FILENAME=2018_02_07_ASAP-master
 		_ASAP_SOURCE=$_REPOSITORY_DIR/asap/$_ASAP_SOURCE_FILENAME.tar.gz
