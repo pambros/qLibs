@@ -83,5 +83,6 @@
 		@set _RPY2_WHEEL=%_WHEEL_DIR%/rpy2-2.8.6-cp36-cp36m-win_amd64.whl
 		@set _MAHOTAS_WHEEL=%_WHEEL_DIR%/mahotas-1.4.3-cp36-cp36m-win_amd64.whl
 		@set _MYSQL_CLIENT_WHEEL=%_WHEEL_DIR%/mysqlclient-1.3.12-cp36-cp36m-win_amd64.whl
+		@set _OPEN_SLIDE_WHEEL=%_WHEEL_DIR%/openslide_python-1.1.1-cp36-cp36m-win_amd64.whl
 		
 	@rem opencv http://opencv.org/

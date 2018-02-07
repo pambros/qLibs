@@ -9,6 +9,11 @@
 )
 @cd %_TMP_PATH%
 
+@set _JUPYTER="%_PYTHON_DIR%/Scripts/jupyter.exe"
+@set PATH=%PATH%;%_PYTHON_DIR%/Scripts
+
+@rem @exit
+
 %_PYTHON% -m pip install --upgrade pip
 %_PYTHON% -m pip install setuptools --upgrade
 %_PYTHON% -m pip install cython
@@ -54,12 +59,24 @@
 %_PYTHON% -m pip install %_MAHOTAS_WHEEL%
 %_PYTHON% -m pip install git+git://github.com/luispedro/mahotas.git --upgrade --no-deps
 
-%_PYTHON% -m pip install jupyter
+%_PYTHON% -m pip install jupyter --upgrade
+%_PYTHON% -m pip install https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tarball/master --upgrade
+%_PYTHON% -m pip install jupyter_nbextensions_configurator
+@rem this one works on linux but not on windows
+@rem %_JUPYTER% contrib nbextension install --user
+%_JUPYTER% contrib nbextensions install --sys-prefix --skip-running-check
+%_JUPYTER% nbextensions_configurator enable --user
+@rem add Variable inspector, Table of contents, collapsible headings, comment/uncomment, codefolding via http://localhost:8888/tree#nbextensions_configurator or in command-line like below (not tried)
+@rem check "Collapse/uncollapse ToC sections" in Table of contents options
+@rem jupyter nbextension enable codefolding/main
+@rem jupyter nbextension disable codefolding/main
 
 %_PYTHON% -m pip install mako
 %_PYTHON% -m pip install nose
 
 %_PYTHON% -m pip install %_MYSQL_CLIENT_WHEEL%
+
+%_PYTHON% -m pip install %_OPEN_SLIDE_WHEEL%
 
 @rem libgpuarray pygpu
 @set _BASE=%cd%
