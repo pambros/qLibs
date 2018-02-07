@@ -21,7 +21,6 @@ _CURRENT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # source $_PROJECT_PATH/common/makeSpecific.sh thirdParties glib
 # source $_PROJECT_PATH/common/makeSpecific.sh thirdParties gdkpixbuf
 # source $_PROJECT_PATH/common/makeSpecific.sh thirdParties cairo
-
 # source $_PROJECT_PATH/common/makeSpecific.sh thirdParties liblcms2
 
 # source $_PROJECT_PATH/common/makeSpecific.sh thirdParties libjpeg-turbo
@@ -34,12 +33,11 @@ _CURRENT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # source $_PROJECT_PATH/common/makeSpecific.sh thirdParties openslide
 
 # source $_PROJECT_PATH/common/makeSpecific.sh thirdParties fltk
-# source $_PROJECT_PATH/common/makeSpecific.sh thirdParties qt
 # source $_PROJECT_PATH/common/makeSpecific.sh thirdParties opencv
 # source $_PROJECT_PATH/common/makeSpecific.sh thirdParties itk
 # source $_PROJECT_PATH/common/makeSpecific.sh thirdParties vtk
 
-# source $_PROJECT_PATH/common/makeSpecific.sh thirdParties asap
+source $_PROJECT_PATH/common/makeSpecific.sh thirdParties asap
 
 if [ "$1" != "-nopause" ]; then
 	read -n1 -r -p "Press any key to continue..."

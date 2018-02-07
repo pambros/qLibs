@@ -126,9 +126,11 @@
 		_FLTK_SOURCE_FILENAME=fltk-1.4.x-r12643
 		_FLTK_SOURCE=$_REPOSITORY_DIR/fltk/$_FLTK_SOURCE_FILENAME.tar.gz
 	
-	# qt
-	
 	# opencv http://opencv.org/
+		_OPENCV_SOURCE_FILENAME=opencv-3.4.0
+		_OPENCV_SOURCE=$_REPOSITORY_DIR/opencv/$_OPENCV_SOURCE_FILENAME.tar.gz
+		_OPENCV_CONTRIB_SOURCE_FILENAME=opencv_contrib-3.4.0
+		_OPENCV_CONTRIB_SOURCE=$_REPOSITORY_DIR/opencv/$_OPENCV_CONTRIB_SOURCE_FILENAME.tar.gz
 		
 	# itk https://itk.org/
 		_ITK_SOURCE_FILENAME=InsightToolkit-4.12.2
@@ -142,4 +144,6 @@
 		_VTK_SOURCE=$_REPOSITORY_DIR/vtk/$_VTK_SOURCE_FILENAME.tar.gz
 		# _VTK_DIR=$_PROJECT_PATH/thirdParties/vtk/generated/$_USER_SPECIFIC/vtk
 		
-	# asap
+	# asap https://github.com/GeertLitjens/ASAP
+		_ASAP_SOURCE_FILENAME=ASAP-1.7.3
+		_ASAP_SOURCE=$_REPOSITORY_DIR/asap/$_ASAP_SOURCE_FILENAME.tar.gz
