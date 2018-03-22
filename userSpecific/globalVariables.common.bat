@@ -79,7 +79,7 @@
 		@set _NUMPY_WHEEL=%_WHEEL_DIR%/numpy-1.13.1+mkl-cp36-cp36m-win_amd64.whl
 		@set _SCIPY_WHEEL=%_WHEEL_DIR%/scipy-1.0.0b1-cp36-cp36m-win_amd64.whl
 		@set _SCIKIT_LEARN_WHEEL=%_WHEEL_DIR%/scikit_learn-0.19.0-cp36-cp36m-win_amd64.whl
-		@set _SCIKIT_IMAGE_WHEEL=%_WHEEL_DIR%/scikit_image-0.13.0-cp36-cp36m-win_amd64.whl
+		@rem @set _SCIKIT_IMAGE_WHEEL=%_WHEEL_DIR%/scikit_image-0.13.0-cp36-cp36m-win_amd64.whl
 		@set _RPY2_WHEEL=%_WHEEL_DIR%/rpy2-2.8.6-cp36-cp36m-win_amd64.whl
 		@set _MAHOTAS_WHEEL=%_WHEEL_DIR%/mahotas-1.4.3-cp36-cp36m-win_amd64.whl
 		@set _MYSQL_CLIENT_WHEEL=%_WHEEL_DIR%/mysqlclient-1.3.12-cp36-cp36m-win_amd64.whl

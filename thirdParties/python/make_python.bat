@@ -19,22 +19,25 @@
 %_PYTHON% -m pip install cython
 %_PYTHON% -m pip install %_NUMPY_WHEEL%
 
-@rem pydicom
 @rem %_PYTHON% -m pip uninstall -y pydicom
+@rem %_PYTHON% -m pip install pydicom
 %_7_ZIP% x "%_PYDICOM_SOURCE%" -y 1> nul
 @cd pydicom-master
 %_PYTHON% setup.py install --prefix %_PYTHON_DIR_WITH_BACK_SLASH%\
 @cd ..
 @rem TODO fix deleteFolder, this line doesn't work
 @call "%_PROJECT_PATH%/common/deleteFolder.bat" "%_TMP_PATH%/pydicom-master"
-@rem %_PYTHON% -m pip install pydicom
 
+%_PYTHON% -m pip install sortedcontainers
 %_PYTHON% -m pip install fs
 %_PYTHON% -m pip install matplotlib
 %_PYTHON% -m pip install protobuf
 %_PYTHON% -m pip install %_SCIPY_WHEEL%
 %_PYTHON% -m pip install %_SCIKIT_LEARN_WHEEL%
-%_PYTHON% -m pip install %_SCIKIT_IMAGE_WHEEL%
+@rem %_PYTHON% -m pip install %_SCIKIT_IMAGE_WHEEL%
+@rem dependency of last github scikit-image
+%_PYTHON% -m pip install dask
+%_PYTHON% -m pip install git+git://github.com/scikit-image/scikit-image.git --upgrade --no-deps
 
 %_PYTHON% -m pip install h5py
 %_PYTHON% -m pip install requests
@@ -45,7 +48,7 @@
 @rem %_PYTHON% -m pip uninstall -y tensorflow-gpu
 @rem %_PYTHON% -m pip uninstall -y tf-nightly-gpu
 @rem %_PYTHON% -m pip install tf-nightly-gpu
-@rem %_PYTHON% -m pip install tensorflow-gpu
+%_PYTHON% -m pip install tensorflow-gpu
 
 %_PYTHON% -m pip install git+git://github.com/Theano/Theano.git --upgrade --no-deps
 %_PYTHON% -m pip install git+git://github.com/fchollet/keras.git --upgrade --no-deps
@@ -74,9 +77,22 @@
 %_PYTHON% -m pip install mako
 %_PYTHON% -m pip install nose
 
+%_PYTHON% -m pip install binpacking
+%_PYTHON% -m pip install pandas
+
 %_PYTHON% -m pip install %_MYSQL_CLIENT_WHEEL%
 
 %_PYTHON% -m pip install %_OPEN_SLIDE_WHEEL%
+
+@rem %_PYTHON% -m pip install lime
+@rem %_PYTHON% -m pip install git+git://github.com/marcotcr/lime.git --upgrade --no-deps
+@rem %_7_ZIP% x "2018_02_08_lime-master.zip" -y 1> nul
+%_GIT% clone https://github.com/marcotcr/lime.git
+@cd lime
+%_PYTHON% setup.py install --prefix %_PYTHON_DIR_WITH_BACK_SLASH%\
+@cd ..
+@rem TODO fix deleteFolder, this line doesn't work
+@call "%_PROJECT_PATH%/common/deleteFolder.bat" "%_TMP_PATH%/lime"
 
 @rem libgpuarray pygpu
 @set _BASE=%cd%
