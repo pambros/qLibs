@@ -7,6 +7,7 @@ userSpecific/*
 !userSpecific/globalVariables.default.sh
 !userSpecific/globalVariables.common.sh
 sync.ffs_db
+.sync.ffs_db
 /internal
 /thirdParties/itk/g
 qLibs.7z
